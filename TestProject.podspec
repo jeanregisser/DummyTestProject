@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SubLib' do |sl|
     sl.source_files = 'SubLib.{h,m}'
-    sl.dependency 'Core'
+    sl.dependency 'TestProject/Core'
   end
   
 end
