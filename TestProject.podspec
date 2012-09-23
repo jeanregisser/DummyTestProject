@@ -14,4 +14,9 @@ Pod::Spec.new do |s|
     core.dependency 'libPusher', :git => 'git://github.com/lukeredpath/libPusher.git', :commit => 'e262c4bb90dd86f5e56705df105d658e6c38e866'
   end
   
+  s.subspec 'SubLib' do |sl|
+    sl.source_files = 'SubLib.{h,m}'
+    sl.dependency 'Core'
+  end
+  
 end
